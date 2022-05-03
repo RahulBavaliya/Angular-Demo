@@ -1,1 +1,0 @@
-{"ast":null,"code":"export class CoursesService {\n  getCourses() {\n    return [\"coruse 1\", \"course 2\", \"course 3\"];\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
