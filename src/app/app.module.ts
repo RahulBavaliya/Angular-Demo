@@ -31,7 +31,7 @@ import { AuthGuardService } from './auth-guard.service';
   providers: [{
     provide: 'SocialAuthServiceConfig',
     useValue: {
-      autoLogin: true,
+      autoLogin: false,
       providers: [
         {
           id: GoogleLoginProvider.PROVIDER_ID,
