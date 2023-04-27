@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
-import { GoogleLoginProvider,  SocialLoginModule } from 'angularx-social-login';
+import { GoogleLoginProvider,  SocialAuthServiceConfig,  SocialLoginModule } from '@abacritt/angularx-social-login';
  
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  
@@ -22,9 +22,6 @@ import { AuthGuardService } from './auth-guard.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-  
- 
-
     SocialLoginModule
   ],
  
@@ -35,10 +32,10 @@ import { AuthGuardService } from './auth-guard.service';
       providers: [
         {
           id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider('574913494954-t9vse310scnr9hglffdcm2ehdcp5s2jc.apps.googleusercontent.com')
+          provider: new GoogleLoginProvider('696666863447-rjgov73h20c3tshl3pmamnd2r294ko3l.apps.googleusercontent.com')
         }
       ]
-    }
+    }as SocialAuthServiceConfig,
   },
     AuthGuardService,
     CoursesService],

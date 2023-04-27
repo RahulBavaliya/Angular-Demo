@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {SocialAuthService} from 'angularx-social-login';
+import {SocialAuthService} from '@abacritt/angularx-social-login';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -9,7 +9,7 @@ import {SocialAuthService} from 'angularx-social-login';
 })
 export class DashboardComponent  {
 
-  public userDetails: any;
+  
   constructor(private router: Router,
     public socialAuthServive: SocialAuthService) {
 }
